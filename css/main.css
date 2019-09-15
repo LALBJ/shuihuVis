@@ -1,0 +1,47 @@
+div{
+    height: 100%;
+    border-block-color:black; 
+}
+
+svg{
+    width: 95%;
+}
+
+.own-scroll{
+	overflow-x: hidden;
+	overflow-y: scroll;
+	max-height: 400px
+}
+
+.lineEvent {
+	fill: none;
+	stroke: teal;
+	stroke-width: 1.5;
+}
+
+.linePeople {
+	fill: none;
+	stroke: green;
+	stroke-width: 1.5;
+}
+
+.axis--grid .domain {
+  fill: #ddd;
+  stroke: none;
+}
+
+.axis--x .domain,
+.axis--grid .tick line {
+  stroke: #fff;
+}
+
+.axis--grid .tick--minor line {
+  stroke-opacity: .5;
+}
+
+#bursh{
+	position: absolute;
+	background-color: red;
+	left: 40px
+}
+

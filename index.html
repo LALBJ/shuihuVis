@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" href="css/main.css"/>
+        <script type="text/javascript" src="js/d3.js"></script>
+        <link rel="stylesheet" href="css/bootstrap/css/bootstrap.min.css"/>
+    </head>
+    <body>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-3"></div>
+                <div class="row col-md-3 block-center">
+                    <h5>绘制路径:</h5><button class="btn btn-primary btn-draw" type="submit">Draw</button>
+                    <button class="btn btn-secondary" type="submit">Clear</button>
+                </div>
+                <div class="buttonDiv row col-md-6">
+                   <h5>热力效果：</h5>
+                    <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                        <button class="btn btn-primary btn-on " type="submit">On
+                        <button class="btn btn-primary btn-off active" type="submit">Off
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3 chapHero checkbox">
+                        <ul class="nav nav-tabs">
+                                <li class="nav-item">
+                                  <a class="nav-link active" href="#">人物</a>
+                                </li>
+                                <li class="nav-item">
+                                  <a class="nav-link" href="#">章节</a>
+                                </li>
+                        </ul>
+                    <div class="hero own-scroll"></div>
+                    <div class="chapter"></div>
+                </div>
+                <div class="col-md-9 map">
+                </div>
+            </div>
+            <div id="brush"></div>
+            <div class="row timeline"></div>
+        </div>
+        <script src="js/heatmap.js"></script>
+        <script src="js/jquery.min.js"></script>
+        <script src="css/bootstrap/js/bootstrap.js"></script>
+        <script type="text/javascript" src="js/map/map.js"></script>
+        <script type="text/javascript" src="js/timeline/timeline.js"></script>
+    </body>
+</html>

@@ -5,14 +5,16 @@
         <link rel="stylesheet" href="css/main.css"/>
         <script type="text/javascript" src="js/d3.js"></script>
         <link rel="stylesheet" href="css/bootstrap/css/bootstrap.min.css"/>
+        <link rel="stylesheet" href="css/font-awesome.min.css"/>
     </head>
     <body>
         <div class="container-fluid">
-            <div class="row">
+            <div class="row toolbar">
                 <div class="col-md-3"></div>
                 <div class="row col-md-3 block-center">
                     <h5>绘制路径:</h5><button class="btn btn-primary btn-draw" type="submit">Draw</button>
-                    <button class="btn btn-secondary" type="submit">Clear</button>
+                    <!--<button class="btn btn-secondary" type="submit">Clear</button>-->
+                    <button class="btn btn-secondary btn-pause" type="submit">Pause</button>
                 </div>
                 <div class="buttonDiv row col-md-6">
                    <h5>热力效果：</h5>
@@ -22,7 +24,7 @@
                     </div>
                 </div>
             </div>
-            <div class="row">
+            <div class="row row2">
                 <div class="col-md-3 chapHero checkbox">
                         <ul class="nav nav-tabs">
                                 <li class="nav-item">
@@ -36,8 +38,73 @@
                     <div class="chapter"></div>
                 </div>
                 <div class="col-md-9 map">
+                    <!-- <div id="timeText" >
+                    <div class="neiRong"></div>
+                    <div class="didian"></div>
+                    <div class="shijian"></div> -->
+                </div>
                 </div>
             </div>
+            <div class="eventTip">
+                <i class="fa fa-window-close" aria-hidden="true"></i>
+                <table class="table" id="detailData">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">First</th>
+                            <th scope="col">Last</th>
+                            <th scope="col">Handle</th>
+                          </tr>
+                    </thead>
+                    <tbody>
+    <tr><td>liujinzhong1</td><td>25</td><td>男</td><td>山西吕梁</td></tr>
+    <tr><td>liujinzhong2</td><td>25</td><td>男</td><td>山西吕梁</td></tr>
+    <tr><td>liujinzhong3</td><td>25</td><td>男</td><td>山西吕梁</td></tr>
+    <tr><td>liujinzhong4</td><td>25</td><td>男</td><td>山西吕梁</td></tr>
+    <tr><td>liujinzhong5</td><td>25</td><td>男</td><td>山西吕梁</td></tr>
+    <tr><td>liujinzhong6</td><td>25</td><td>男</td><td>山西吕梁</td></tr>
+    <tr><td>liujinzhong7</td><td>25</td><td>男</td><td>山西吕梁</td></tr>
+    <tr><td>liujinzhong8</td><td>25</td><td>男</td><td>山西吕梁</td></tr>
+    <tr><td>liujinzhong9</td><td>25</td><td>男</td><td>山西吕梁</td></tr>
+    <tr><td>liujinzhong10</td><td>25</td><td>男</td><td>山西吕梁</td></tr>
+    <tr><td>liujinzhong11</td><td>25</td><td>男</td><td>山西吕梁</td></tr>
+    <tr><td>liujinzhong12</td><td>25</td><td>男</td><td>山西吕梁</td></tr>
+    <tr><td>liujinzhong13</td><td>25</td><td>男</td><td>山西吕梁</td></tr>
+    <tr><td>liujinzhong14</td><td>25</td><td>男</td><td>山西吕梁</td></tr>
+    <tr><td>liujinzhong15</td><td>25</td><td>男</td><td>山西吕梁</td></tr>
+    <tr><td>liujinzhong16</td><td>25</td><td>男</td><td>山西吕梁</td></tr>
+    <tr><td>liujinzhong17</td><td>25</td><td>男</td><td>山西吕梁</td></tr>
+    <tr><td>liujinzhong18</td><td>25</td><td>男</td><td>山西吕梁</td></tr>
+    <tr><td>liujinzhong19</td><td>25</td><td>男</td><td>山西吕梁</td></tr>
+    <tr><td>liujinzhong20</td><td>25</td><td>男</td><td>山西吕梁</td></tr>
+    <tr><td>liujinzhong21</td><td>25</td><td>男</td><td>山西吕梁</td></tr>
+    <tr><td>liujinzhong22</td><td>25</td><td>男</td><td>山西吕梁</td></tr>
+    <tr><td>liujinzhong23</td><td>25</td><td>男</td><td>山西吕梁</td></tr>
+    <tr><td>liujinzhong24</td><td>25</td><td>男</td><td>山西吕梁</td></tr>
+    <tr><td>liujinzhong25</td><td>25</td><td>男</td><td>山西吕梁</td></tr>
+    <tr><td>liujinzhong26</td><td>25</td><td>男</td><td>山西吕梁</td></tr>
+    <tr><td>liujinzhong27</td><td>25</td><td>男</td><td>山西吕梁</td></tr>
+    <tr><td>liujinzhong28</td><td>25</td><td>男</td><td>山西吕梁</td></tr>
+    <tr><td>liujinzhong29</td><td>25</td><td>男</td><td>山西吕梁</td></tr>
+    <tr><td>liujinzhong30</td><td>25</td><td>男</td><td>山西吕梁</td></tr>
+    <tr><td>liujinzhong31</td><td>25</td><td>男</td><td>山西吕梁</td></tr>
+    <tr><td>liujinzhong32</td><td>25</td><td>男</td><td>山西吕梁</td></tr>
+    <tr><td>liujinzhong33</td><td>25</td><td>男</td><td>山西吕梁</td></tr>
+    <tr><td>liujinzhong34</td><td>25</td><td>男</td><td>山西吕梁</td></tr>
+    <tr><td>liujinzhong35</td><td>25</td><td>男</td><td>山西吕梁</td></tr>
+    <tr><td>liujinzhong36</td><td>25</td><td>男</td><td>山西吕梁</td></tr>
+    <tr><td>liujinzhong37</td><td>25</td><td>男</td><td>山西吕梁</td></tr>
+    <tr><td>liujinzhong38</td><td>25</td><td>男</td><td>山西吕梁</td></tr>
+    <tr><td>liujinzhong39</td><td>25</td><td>男</td><td>山西吕梁</td></tr>
+    <tr><td>liujinzhong40</td><td>25</td><td>男</td><td>山西吕梁</td></tr>
+</tbody>
+            </table>
+            <table class="table">
+                <tbody>
+                    <tr><td><div id="barcon" name="barcon"></div></td></tr>
+            </tbody>
+                </table>
+        </div>
             <div id="brush"></div>
             <div class="row timeline"></div>
         </div>
@@ -45,7 +112,7 @@
         <script src="js/heatmap.js"></script>
         <script src="js/jquery.min.js"></script>
         <script src="css/bootstrap/js/bootstrap.js"></script>
-        <script type="text/javascript" src="js/map/map.js"></script>
         <script type="text/javascript" src="js/timeline/timeline.js"></script>
+        <script type="text/javascript" src="js/map/map.js"></script>
     </body>
 </html>

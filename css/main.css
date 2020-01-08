@@ -2,8 +2,24 @@ div{
     border-block-color:black; 
 }
 
+html,body{
+	margin:0; 
+	padding:0; 
+	width:100%; 
+	height:100%
+}
+
 svg{
     width: 95%;
+}
+
+.mapSvg{
+	width: 100%;
+	background-color: (236, 236, 236);
+}
+
+canvas{
+	left: 15px;
 }
 
 .own-scroll{
@@ -14,7 +30,7 @@ svg{
 
 .lineEvent {
 	fill: none;
-	stroke: teal;
+	stroke: rgb(255, 0, 0);
 	stroke-width: 1.5;
 }
 
@@ -50,4 +66,34 @@ svg{
 	color: white;
 	text-align: center;
 	padding: 0.5em
-  }
+}
+
+#timeText{
+	position: relative;
+    top: 490.202px;
+    opacity: 0;
+    pointer-events: none;
+    box-sizing: border-box;
+	left: 146.686px;
+	background-color: rgba(0, 0, 0, 0.8);
+	border-radius: 6px;
+	color: white;
+	text-align: center;
+	padding: 0.5em
+}
+
+.eventTip{
+  display: none;
+  position: absolute;
+  width: 200px;
+  margin: 0;
+  padding: 0;
+  background: #FFFFFF;
+  border-radius: 5px;
+  list-style: none;
+  box-shadow:
+    0 15px 35px rgba(50,50,90,0.1),
+    0 5px 15px rgba(0,0,0,0.07);
+  overflow: hidden;
+  z-index: 999999;
+}
